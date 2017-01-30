@@ -15,11 +15,20 @@
 
       <img class="perfil" src="img/perfil.svg">
     </div>
-    <div class="subnav" ng-hide="weburl=='/'">
+    <div class="subnav" ng-show="weburl=='/prescripcion'">
       <a class="subenlace" href="">TODAS (5)</a>
       <a class="subenlace" href="">EN ESPERA (2)</a>
       <a class="subenlace" href="">PROCESADAS (3)</a>
       <a class="subenlace" href="">DISPENSADAS (1)</a>
+    </div>
+    <div class="subnav" ng-show="weburl=='/inventario'">
+      <a class="subenlace" href="">MEDICAMENTO</a>
+      <a class="subenlace" href="">CATEGORIAS</a>
+    </div>
+    <div class="subnav" ng-show="weburl=='/historial'">
+      <a class="subenlace" href="">TODOS</a>
+      <a class="subenlace" href="">FARMACEÚTICOS</a>
+      <a class="subenlace" href="">ADMINISTRADOR</a>
     </div>
   </div>
 </header>
