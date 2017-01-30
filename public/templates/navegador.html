@@ -1,0 +1,25 @@
+<header class="header-mod" ng-controller="mostrar-Nav as nav">
+  <div class="header-centrado">
+    <div class="navegador">
+      <a href="#/" class="logo">
+        <img class="logo-img" src="img/logo.svg" >
+        <h1 class="page-title">{{title}}</h1>
+      </a>
+      <nav>
+        <a href="#/prescripcion"><img class="img-nav" src="img/prescripcion.svg"><h5 class="title-nav">PRESCRIPCIONES</h5></a>
+        <a href="#/inventario"><img class="img-nav" src="img/inventario.svg"><h5 class="title-nav">INVENTARIO</h5></a>
+        <a href="#/historial"><img class="img-nav" src="img/historial.svg"><h5 class="title-nav">HISTORIAL</h5></a>
+        <a href="#/reporte"><img class="img-nav" src="img/reporte.svg"><h5 class="title-nav">REPORTE</h5></a>
+
+      </nav>
+
+      <img class="perfil" src="img/perfil.svg">
+    </div>
+    <div class="subnav" ng-hide="weburl=='/'">
+      <a class="subenlace" href="">TODAS (5)</a>
+      <a class="subenlace" href="">EN ESPERA (2)</a>
+      <a class="subenlace" href="">PROCESADAS (3)</a>
+      <a class="subenlace" href="">DISPENSADAS (1)</a>
+    </div>
+  </div>
+</header>
