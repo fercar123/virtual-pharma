@@ -20,9 +20,10 @@ body {
   color: #fff;
   width: 100%;
   position: fixed;
-  height: 170px;
+  height: 180px;
   left: 0;
-  top: 0; }
+  top: 0;
+  z-index: 1000; }
 
 .header-centrado {
   width: 80%;
@@ -71,13 +72,17 @@ body {
   font-weight: 400; }
 
 .contenido {
-  margin-top: 124.4px;
   font-family: "Roboto", sans-serif;
-  height: 80%;
+  width: 80%;
   color: #3a4953;
   text-align: center;
   display: block;
-  margin: 124.4px auto 0; }
+  margin: 180px auto 0;
+  position: relative; }
+  .contenido .icon-search {
+    top: 40px;
+    left: 30px;
+    position: absolute; }
   .contenido .titulo-grande {
     margin-top: 200px;
     font-size: 27px;
@@ -109,6 +114,10 @@ body {
     margin-top: 42px;
     font-size: 19px;
     font-weight: 400; }
+  .contenido .tabla {
+    margin: 80px 0 0;
+    position: absolute;
+    width: 100%; }
 
 .hola {
   margin-top: 300px; }
@@ -125,7 +134,7 @@ body {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
-    padding: 10px; }
+    padding: 20px; }
     .subnav .subenlace:hover {
       border-bottom: thick solid; }
 

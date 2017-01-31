@@ -23,6 +23,7 @@ body
   height: 180px
   left: 0
   top: 0
+  z-index: 1000
 .header-centrado
   width: 80%
   display: block
@@ -72,13 +73,17 @@ body
 
 
 .contenido
-  margin-top: 124.4px
   font-family: $font-family
-  height: 80%
+  width: 80%
   color: rgba(58,73,83,255)
   text-align: center
   display: block
-  margin: 124.4px auto 0
+  margin: 180px auto 0
+  position: relative
+  .icon-search
+    top: 40px
+    left: 30px
+    position: absolute
   .titulo-grande
     margin-top: 200px
     font-size: 27px
@@ -111,6 +116,12 @@ body
     margin-top: 42px
     font-size: 19px
     font-weight: 400
+  .tabla
+    display:block
+    margin: 80px 0 0
+    position: absolute
+    width: 100%
+
 .hola
   margin-top: 300px
 .perfil
@@ -122,10 +133,11 @@ body
   top: 139px
 
 
+
   .subenlace
     color: #fff
     text-decoration: none
     font-size: 16px
-    padding: 10px
+    padding: 20px
     &:hover
       border-bottom: thick solid
